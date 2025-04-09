@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ButtonStart from "../components/ButtonStart.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Rainbow Code">
+ 
+
+  <!-- Hero -->
+  <section
+    class="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center text-center px-4"
+  >
+    <div>
+      <h1 class="text-5xl font-bold mb-4">Creamos páginas web que venden</h1>
+      <p class="text-xl mb-6 text-gray-800">
+        Diseño moderno, rápido y personalizado para tu negocio.
+      </p>
+      <ButtonStart />
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-20 px-6 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center mb-12">Nuestros Servicios</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
+      <Card
+        heading="Landing Pages"
+        line1="Perfectas para campañas y productos específicos. Rápidas, atractivas y efectivas."
+        line2="Adquirir!"
+      />
+
+      <Card
+        heading="Sitios Corporativos"
+        line1="Presencia profesional para tu empresa o marca. Muestra tus servicios y fortalezas."
+        line2="Adquirir!"
+      />
+
+      <Card
+        heading="E-commerce"
+        line1="Vende online con una tienda personalizada, segura y optimizada para conversiones."
+        line2="Adquirir!"
+      />
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section id="proceso" class="py-20 px-6 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-12">¿Cómo Trabajamos?</h2>
+    <div class="max-w-4xl mx-auto space-y-8 text-center">
+      <div>
+        <h3 class="text-xl font-semibold">1. Escuchamos tu idea</h3>
+        <p>Nos reunimos contigo y entendemos tu necesidad.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">2. Prototipamos</h3>
+        <p>Te mostramos una vista previa antes de desarrollar.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">3. Diseñamos y lanzamos</h3>
+        <p>Te entregamos un sitio rápido, optimizado y moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-20 px-6 bg-blue-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-6">¿Listo para comenzar?</h2>
+    <p class="mb-6 text-lg">
+      Contáctanos y empieza a vender con una web hecha a medida.
+    </p>
+    <a
+      href="mailto:tuemail@ejemplo.com"
+      class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-200 transition"
+    >
+      Escríbenos
+    </a>
+  </section>
+</Layout>
